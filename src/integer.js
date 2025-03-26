@@ -1,7 +1,8 @@
-import { isInteger, negate } from 'lodash-es'
+import { useNegate } from '@mpietrucha/function'
+import { isInteger } from 'lodash-es'
 
 export { isInteger }
 
 export class Integer {}
 
-export const notInteger = negate(isInteger)
+export const notInteger = useNegate(isInteger)

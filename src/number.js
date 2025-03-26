@@ -1,5 +1,6 @@
-import { isNumber, negate } from 'lodash-es'
+import { useNegate } from '@mpietrucha/function'
+import { isNumber } from 'lodash-es'
 
 export { isNumber }
 
-export const notNumber = negate(isNumber)
+export const notNumber = useNegate(isNumber)

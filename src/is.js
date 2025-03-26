@@ -1,6 +1,6 @@
 import { isEmpty } from '@/empty'
 import { Validators } from '@/validators'
-import { negate } from 'lodash-es'
+import { useNegate } from '@mpietrucha/function'
 
 export const isBasic = type => {
     return Validators.has(type)
@@ -18,8 +18,8 @@ export const is = (input, ...parameters) => {
     return isType(input, parameters.shift())
 }
 
-export const not = negate(is)
+export const not = useNegate(is)
 
-export const notType = negate(isType)
+export const notType = useNegate(isType)
 
-export const notBasic = negate(isBasic)
+export const notBasic = useNegate(isBasic)
