@@ -1,6 +1,7 @@
 export { isArray, notArray } from '@/array'
 export { isBoolean, notBoolean } from '@/boolean'
 export { Empty, isEmpty, notEmpty } from '@/empty'
+export { isEqual, notEqual } from '@/equal'
 export { isFunction, notFunction } from '@/function'
 export { Integer, isInteger, notInteger } from '@/integer'
 export { is, isBasic, isType, not, notBasic, notType } from '@/is'
